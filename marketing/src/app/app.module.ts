@@ -11,6 +11,8 @@ import { FooterComponent } from './footer/footer.component';
 import { PlansComponent } from './plans/plans.component';
 import { AboutComponent } from './about/about.component';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +21,9 @@ import { AboutComponent } from './about/about.component';
     NavbarComponent,
     FooterComponent,
     PlansComponent,
-    AboutComponent
+    AboutComponent,
+
+
   ],
   imports: [
     BrowserModule,

@@ -6,12 +6,14 @@ import { PlansComponent } from './plans/plans.component';
 import { AboutComponent } from './about/about.component';
 
 
+
+
 const routes: Routes = [
   {path: "", redirectTo: "home", pathMatch: "full"},
   {path: "home", component: HomeComponent},
   {path: "contato", component: ContatoComponent},
   {path: "plans", component: PlansComponent},
-  {path: "about", component: AboutComponent} 
+  {path: "about", component: AboutComponent}
 ];
 
 @NgModule({
