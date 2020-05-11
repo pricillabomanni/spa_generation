@@ -6,7 +6,7 @@
  -->
 
 <nav class="navbar navbar-expand-lg navbar-light shadow">
-   
+
     <img class="col-1" routerLink="/home" src="" alt="">
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -14,15 +14,22 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav col-10">
-            <a class="nav-item nav-link btn btn-outline-secondary col-3 px-1 mx-2 border-0" routerLink="/home">Home <span
-                    class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link btn btn-outline-secondary col-3 px-1 mx-2 border-0" routerLink="/plans">Plans</a>
-            <a class="nav-item nav-link btn btn-outline-secondary col-3 px-1 mx-2 border-0" routerLink="/about">About</a>
-            <a class="nav-item nav-link btn btn-outline-secondary col-3 px-1 mx-2 border-0" routerLink="/contato">Contact</a>
-            <a class="nav-item nav-link disabled btn btn-outline-secondary border-0" routerLink=""
-                tabindex="-1" aria-disabled="true"></a>
+        <div class="row">
+            <div class="navbar-nav col-12">
+                <a class="nav-item nav-link btn btn-outline-secondary px-1 mx-2 border-0" routerLink="/home">Home
+                    <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link btn btn-outline-secondary px-1 mx-2 border-0"
+                    routerLink="/plans">Plans</a>
+                <a class="nav-item nav-link btn btn-outline-secondary px-1 mx-2 border-0"
+                    routerLink="/about">About</a>
+                <a class="nav-item nav-link btn btn-outline-secondary px-1 mx-2 border-0"
+                    routerLink="/contato">Contact</a>
+                <a class="nav-item nav-link btn btn-outline-secondary px-1 mx-2 border-0"
+                    routerLink="/comments">Comments</a>
+                <a class="nav-item nav-link disabled btn btn-outline-secondary border-0" routerLink="" tabindex="-1"
+                    aria-disabled="true"></a>
                 <a class="navbar-brand col-1" routerLink="/home"></a>
+            </div>
         </div>
     </div>
 </nav>

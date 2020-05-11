@@ -10,7 +10,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { PlansComponent } from './plans/plans.component';
 import { AboutComponent } from './about/about.component';
-
+import { CommentsComponent } from './comments/comments.component';
+import { HttpClientModule } from '@angular/common/http'
 
 
 @NgModule({
@@ -22,13 +23,15 @@ import { AboutComponent } from './about/about.component';
     FooterComponent,
     PlansComponent,
     AboutComponent,
+    CommentsComponent,
 
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
