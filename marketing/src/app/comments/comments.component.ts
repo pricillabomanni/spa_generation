@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ServiceComentarioService } from '../service/service-comentario.service';
+import { ConteudoComentarios } from '../model/comentarios'
 
 @Component({
   selector: 'app-comments',
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CommentsComponent implements OnInit {
 
-  constructor() { }
+  listaComentarios: ConteudoComentarios[]
 
-  ngOnInit(): void {
+
+  constructor(private serviceComentarioService: ServiceComentarioService) { }
+
+  ngOnInit(){
+
+    this.findallComentarios()
+
+  }
+
+  findallComentarios(){
+    this.serviceComentarioService.getAllComentarios().subscribe((resp: ConteudoComentarios [])=>{
+      this.listaComentarios = resp
+    })
   }
 
 }
